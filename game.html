@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Игра | GameDesign Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+  <nav class="nav container">
+    <a class="logo" href="index.html" aria-label="GameDesign Hub — на главную">
+      <span class="logo-cyber">
+        <span class="logo-cyber__primary">GameDesign</span>
+        <span class="logo-cyber__second">Hub</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a class="active-link" href="games.html">Игры-примеры</a></li>
+      <li><a href="systems.html">Системы</a></li>
+      <li><a href="career.html">Путь геймдизайнера</a></li>
+    </ul>
+    <div class="theme-switcher" aria-label="Выбор цвета сайта">
+      <select class="theme-select" aria-label="Выбор темы сайта">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+      </select>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <p class="game-detail-back">
+      <a href="games.html">← Ко всем играм</a>
+    </p>
+
+    <div id="game-detail-missing" class="section-mini" hidden>
+      <h1>Игра не найдена</h1>
+      <p class="lead">
+        Проверь ссылку или вернись к списку: возможно, id в адресной строке указан неверно.
+      </p>
+      <p><a href="games.html">Перейти к разделу «Игры-примеры»</a></p>
+    </div>
+
+    <article id="game-detail-root" class="game-detail" hidden>
+      <header class="game-detail-header">
+        <figure class="game-detail-cover-wrap">
+          <img
+            id="game-detail-cover"
+            class="game-photo game-detail-cover"
+            src=""
+            alt=""
+            width="920"
+            height="430"
+            loading="eager"
+          />
+        </figure>
+        <div class="game-detail-heading">
+          <p class="tag" id="game-detail-genre"></p>
+          <h1 id="game-detail-title"></h1>
+        </div>
+      </header>
+
+      <section class="game-detail-meta section-mini" aria-labelledby="game-meta-heading">
+        <h2 id="game-meta-heading" class="game-detail-meta-title">Студия и релиз</h2>
+        <dl class="game-meta-grid">
+          <div>
+            <dt>Разработчик</dt>
+            <dd id="game-detail-studio"></dd>
+          </div>
+          <div>
+            <dt>Издатель</dt>
+            <dd id="game-detail-publisher"></dd>
+          </div>
+          <div>
+            <dt>Год релиза</dt>
+            <dd id="game-detail-year"></dd>
+          </div>
+          <div id="game-meta-engine-row" hidden>
+            <dt>Движок / технология</dt>
+            <dd id="game-detail-engine"></dd>
+          </div>
+        </dl>
+        <p id="game-detail-context" class="lead game-detail-context"></p>
+      </section>
+
+      <section id="game-detail-media-section" class="game-detail-media section-mini" hidden>
+        <h2 class="game-detail-meta-title">Геймплей: кадры и ролики</h2>
+        <p class="lead game-detail-media-lead">
+          Два официальных скриншота и до двух роликов из витрины Steam — материалы того же издателя, что и страница игры в магазине.
+        </p>
+        <div class="game-media-shots" id="game-media-shots-row">
+          <figure class="game-media-shot">
+            <img id="game-media-shot-1" class="game-screenshot" src="" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption id="game-media-cap-1" class="game-media-cap"></figcaption>
+          </figure>
+          <figure class="game-media-shot">
+            <img id="game-media-shot-2" class="game-screenshot" src="" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption id="game-media-cap-2" class="game-media-cap"></figcaption>
+          </figure>
+        </div>
+        <div class="game-media-videos">
+          <figure class="game-video-figure" id="game-video-wrap-1" hidden>
+            <figcaption id="game-video-title-1" class="game-video-title"></figcaption>
+            <video
+              id="game-video-1"
+              class="game-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster=""
+            ></video>
+          </figure>
+          <figure class="game-video-figure" id="game-video-wrap-2" hidden>
+            <figcaption id="game-video-title-2" class="game-video-title"></figcaption>
+            <video
+              id="game-video-2"
+              class="game-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster=""
+            ></video>
+          </figure>
+        </div>
+      </section>
+
+      <div class="game-detail-grid">
+        <section class="game-detail-card neon-border">
+          <h2>Фишка</h2>
+          <p id="game-detail-hook" class="game-detail-emphasis"></p>
+        </section>
+        <section class="game-detail-card neon-border">
+          <h2>Урок для дизайнера</h2>
+          <p id="game-detail-lesson" class="game-detail-emphasis"></p>
+        </section>
+      </div>
+
+      <section class="game-detail-section">
+        <h2>О чём игра в терминах систем</h2>
+        <p id="game-detail-intro" class="lead"></p>
+      </section>
+
+      <section class="game-detail-section">
+        <h2>Связки механик и прогрессии</h2>
+        <p id="game-detail-systems" class="lead"></p>
+      </section>
+
+      <section class="game-detail-section section-mini">
+        <h2>Что вынести в свой проект</h2>
+        <p id="game-detail-takeaway" class="lead"></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">Учебные материалы; обложки — Steam. Сведения о студиях и датах — краткая справка для геймдизайна, без претензии на полноту.</p>
+    </div>
+  </footer>
+
+  <script src="games-data.js"></script>
+  <script src="games-media.js"></script>
+  <script src="game-page.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

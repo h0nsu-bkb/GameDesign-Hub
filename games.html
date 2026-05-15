@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameDesign Hub | Игры-примеры</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+  <nav class="nav container">
+    <a class="logo" href="index.html" aria-label="GameDesign Hub — на главную">
+      <span class="logo-cyber">
+        <span class="logo-cyber__primary">GameDesign</span>
+        <span class="logo-cyber__second">Hub</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a class="active-link" href="games.html">Игры-примеры</a></li>
+      <li><a href="systems.html">Системы</a></li>
+      <li><a href="career.html">Путь геймдизайнера</a></li>
+    </ul>
+    <div class="theme-switcher" aria-label="Выбор цвета сайта">
+      <select class="theme-select" aria-label="Выбор темы сайта">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+      </select>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <h1>Известные игры и их дизайн-уроки</h1>
+    <p class="lead">
+      Здесь показано, как реальные хиты используют core loop, прогрессию и мотивацию игрока.
+      Нажми на карточку — откроется отдельная страница с разбором.
+    </p>
+
+    <div class="filter-wrap">
+      <button class="filter-btn active" data-genre="all">Все</button>
+      <button class="filter-btn" data-genre="rpg">RPG</button>
+      <button class="filter-btn" data-genre="action">Action</button>
+      <button class="filter-btn" data-genre="puzzle">Puzzle</button>
+    </div>
+
+    <div class="cards" id="games-grid">
+      <a href="game.html?id=782330" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg" alt="Официальная обложка DOOM Eternal" loading="lazy" />
+        <h3>DOOM Eternal</h3>
+        <p><strong>Фишка:</strong> агрессивный бой, где ресурсы добываются через риск.</p>
+        <p><strong>Урок:</strong> экономика боя может заставлять играть "правильно", но весело.</p>
+      </a>
+
+      <a href="game.html?id=1245620" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Официальная обложка Elden Ring" loading="lazy" />
+        <h3>Elden Ring</h3>
+        <p><strong>Фишка:</strong> свобода маршрутов и исследование без маркеров "за руку".</p>
+        <p><strong>Урок:</strong> доверие игроку создает сильное чувство открытия.</p>
+      </a>
+
+      <a href="game.html?id=620" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Официальная обложка Portal 2" loading="lazy" />
+        <h3>Portal 2</h3>
+        <p><strong>Фишка:</strong> обучение через уровень, а не через длинные подсказки.</p>
+        <p><strong>Урок:</strong> хороший левел-дизайн сам объясняет механику.</p>
+      </a>
+
+      <a href="game.html?id=292030" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="Официальная обложка The Witcher 3" loading="lazy" />
+        <h3>The Witcher 3</h3>
+        <p><strong>Фишка:</strong> квесты с моральным выбором без "правильного" ответа.</p>
+        <p><strong>Урок:</strong> контекст и последствия делают выбор по-настоящему важным.</p>
+      </a>
+
+      <a href="game.html?id=1145360" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="Официальная обложка Hades" loading="lazy" />
+        <h3>Hades</h3>
+        <p><strong>Фишка:</strong> быстрые забеги + постоянный мета-прогресс.</p>
+        <p><strong>Урок:</strong> даже поражение может ощущаться полезным.</p>
+      </a>
+
+      <a href="game.html?id=1086940" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="Официальная обложка Baldur's Gate 3" loading="lazy" />
+        <h3>Baldur's Gate 3</h3>
+        <p><strong>Фишка:</strong> вариативные решения через систему правил и ролеплей.</p>
+        <p><strong>Урок:</strong> глубокая системность рождает уникальные истории игроков.</p>
+      </a>
+
+      <a href="game.html?id=1091500" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Официальная обложка Cyberpunk 2077" loading="lazy" />
+        <h3>Cyberpunk 2077</h3>
+        <p><strong>Фишка:</strong> сборка билда меняет стиль прохождения миссий.</p>
+        <p><strong>Урок:</strong> прогрессия должна открывать новые тактики, а не только цифры урона.</p>
+      </a>
+
+      <a href="game.html?id=72850" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/72850/header.jpg" alt="Официальная обложка The Elder Scrolls V: Skyrim" loading="lazy" />
+        <h3>Skyrim</h3>
+        <p><strong>Фишка:</strong> открытый мир с множеством параллельных целей.</p>
+        <p><strong>Урок:</strong> свобода выбора поддерживает долгую вовлеченность.</p>
+      </a>
+
+      <a href="game.html?id=632470" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/632470/header.jpg" alt="Официальная обложка Disco Elysium" loading="lazy" />
+        <h3>Disco Elysium</h3>
+        <p><strong>Фишка:</strong> навыки персонажа участвуют в диалоге как "внутренние голоса".</p>
+        <p><strong>Урок:</strong> механика может быть полностью нарративной и все равно глубокой.</p>
+      </a>
+
+      <a href="game.html?id=292120" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292120/header.jpg" alt="Официальная обложка FINAL FANTASY XIV Online" loading="lazy" />
+        <h3>Final Fantasy XIV</h3>
+        <p><strong>Фишка:</strong> дизайн ролей в группе и четкий ритм MMO-энкаунтеров.</p>
+        <p><strong>Урок:</strong> социальные механики усиливают удержание не хуже прогрессии.</p>
+      </a>
+
+      <a href="game.html?id=1593500" class="card game-card neon-border game-card-link" data-genre="rpg">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="Официальная обложка God of War" loading="lazy" />
+        <h3>God of War</h3>
+        <p><strong>Фишка:</strong> сочетание боевого скилла, истории и исследования.</p>
+        <p><strong>Урок:</strong> темп игры должен чередовать напряжение и передышку.</p>
+      </a>
+
+      <a href="game.html?id=814380" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg" alt="Официальная обложка Sekiro: Shadows Die Twice" loading="lazy" />
+        <h3>Sekiro</h3>
+        <p><strong>Фишка:</strong> бой на парировании с высоким требованием тайминга.</p>
+        <p><strong>Урок:</strong> узкая, но четкая боевая цель делает мастерство измеримым.</p>
+      </a>
+
+      <a href="game.html?id=1174180" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Официальная обложка Red Dead Redemption 2" loading="lazy" />
+        <h3>Red Dead Redemption 2</h3>
+        <p><strong>Фишка:</strong> мир реагирует на поведение игрока и его репутацию.</p>
+        <p><strong>Урок:</strong> системная достоверность усиливает погружение.</p>
+      </a>
+
+      <a href="game.html?id=271590" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Официальная обложка Grand Theft Auto V" loading="lazy" />
+        <h3>GTA V</h3>
+        <p><strong>Фишка:</strong> миссионный дизайн чередует экшен, вождение и сценарные сцены.</p>
+        <p><strong>Урок:</strong> разнообразие активностей снижает утомление от цикла.</p>
+      </a>
+
+      <a href="game.html?id=1237970" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1237970/header.jpg" alt="Официальная обложка Titanfall 2" loading="lazy" />
+        <h3>Titanfall 2</h3>
+        <p><strong>Фишка:</strong> левелы строятся вокруг одной идеи и быстро ее развивают.</p>
+        <p><strong>Урок:</strong> короткая, плотная кампания может быть очень запоминающейся.</p>
+      </a>
+
+      <a href="game.html?id=374320" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg" alt="Официальная обложка Dark Souls III" loading="lazy" />
+        <h3>Dark Souls III</h3>
+        <p><strong>Фишка:</strong> риск потери ресурсов при смерти формирует напряжение.</p>
+        <p><strong>Урок:</strong> ставки в системе делают каждую встречу значимой.</p>
+      </a>
+
+      <a href="game.html?id=2050650" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg" alt="Официальная обложка Resident Evil 4" loading="lazy" />
+        <h3>Resident Evil 4</h3>
+        <p><strong>Фишка:</strong> управление ресурсами и боем в ограниченном пространстве.</p>
+        <p><strong>Урок:</strong> scarcity-дизайн усиливает чувство выживания.</p>
+      </a>
+
+      <a href="game.html?id=1817070" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/header.jpg" alt="Официальная обложка Marvel's Spider-Man Remastered" loading="lazy" />
+        <h3>Marvel's Spider-Man Remastered</h3>
+        <p><strong>Фишка:</strong> перемещение по городу само по себе становится наградой.</p>
+        <p><strong>Урок:</strong> базовая механика должна быть приятной даже вне миссий.</p>
+      </a>
+
+      <a href="game.html?id=210970" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/210970/header.jpg" alt="Официальная обложка The Witness" loading="lazy" />
+        <h3>The Witness</h3>
+        <p><strong>Фишка:</strong> игра учит через наблюдение за окружением и паттернами.</p>
+        <p><strong>Урок:</strong> discovery-driven обучение работает без явных туториалов.</p>
+      </a>
+
+      <a href="game.html?id=257510" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/257510/header.jpg" alt="Официальная обложка The Talos Principle" loading="lazy" />
+        <h3>The Talos Principle</h3>
+        <p><strong>Фишка:</strong> постепенное усложнение через комбинацию знакомых инструментов.</p>
+        <p><strong>Урок:</strong> сложность растет органично, когда новые правила соединяются со старыми.</p>
+      </a>
+
+      <a href="game.html?id=736260" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/736260/header.jpg" alt="Официальная обложка Baba Is You" loading="lazy" />
+        <h3>Baba Is You</h3>
+        <p><strong>Фишка:</strong> игрок меняет сами правила уровня.</p>
+        <p><strong>Урок:</strong> мета-механика может стать центром головоломки.</p>
+      </a>
+
+      <a href="game.html?id=477160" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg" alt="Официальная обложка Human: Fall Flat" loading="lazy" />
+        <h3>Human: Fall Flat</h3>
+        <p><strong>Фишка:</strong> физика создает непредсказуемые, но смешные решения задач.</p>
+        <p><strong>Урок:</strong> sandbox-пазлы усиливают кооперативные эмоции.</p>
+      </a>
+
+      <a href="game.html?id=1426210" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg" alt="Официальная обложка It Takes Two" loading="lazy" />
+        <h3>It Takes Two</h3>
+        <p><strong>Фишка:</strong> кооперативные механики, где роли игроков дополняют друг друга.</p>
+        <p><strong>Урок:</strong> асимметрия задач делает совместную игру осмысленной.</p>
+      </a>
+
+      <a href="game.html?id=387290" class="card game-card neon-border game-card-link" data-genre="puzzle">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/387290/header.jpg" alt="Официальная обложка Ori and the Blind Forest" loading="lazy" />
+        <h3>Ori and the Blind Forest</h3>
+        <p><strong>Фишка:</strong> платформинг и пазлы завязаны на плавном наборе способностей.</p>
+        <p><strong>Урок:</strong> движение и уровень должны развиваться синхронно.</p>
+      </a>
+
+      <a href="game.html?id=646570" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg" alt="Официальная обложка Slay the Spire" loading="lazy" />
+        <h3>Slay the Spire</h3>
+        <p><strong>Фишка:</strong> стратегический deckbuilding с высокой реиграбельностью.</p>
+        <p><strong>Урок:</strong> маленькие решения на каждом ходу дают глубокую мета-стратегию.</p>
+      </a>
+
+      <a href="game.html?id=582010" class="card game-card neon-border game-card-link" data-genre="action">
+        <img class="game-photo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg" alt="Официальная обложка Monster Hunter: World" loading="lazy" />
+        <h3>Monster Hunter: World</h3>
+        <p><strong>Фишка:</strong> охота, крафт и подготовка к бою образуют понятный цикл прогрессии.</p>
+        <p><strong>Урок:</strong> долгосрочная цель работает лучше, когда каждый забег полезен.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">Выбирай жанр и смотри, как меняются дизайнерские приоритеты.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

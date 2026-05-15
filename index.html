@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameDesign Hub | Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="GameDesign Hub — на главную">
+        <span class="logo-cyber">
+          <span class="logo-cyber__primary">GameDesign</span>
+          <span class="logo-cyber__second">Hub</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="active-link" href="index.html">Главная</a></li>
+        <li><a href="games.html">Игры-примеры</a></li>
+        <li><a href="systems.html">Системы</a></li>
+        <li><a href="career.html">Путь геймдизайнера</a></li>
+      </ul>
+      <div class="theme-switcher" aria-label="Выбор цвета сайта">
+        <select class="theme-select" aria-label="Выбор темы сайта">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+    </nav>
+    <div class="hero-layout container">
+      <div class="hero-content">
+        <p class="tag">LEVEL UP YOUR DESIGN</p>
+        <h1>Геймдизайн: проектируй правила, эмоции и победные моменты</h1>
+        <p>
+          Здесь собраны основы геймдизайна в формате геймерского портала:
+          минимум воды, максимум практики и реальных игровых примеров.
+        </p>
+        <p class="hero-lead">
+          Ты научишься формулировать цели сессии, связывать механики с настроением
+          и проверять гипотезы так, чтобы игрок всегда понимал, за что его хвалят
+          и за что наказывают. Ниже — структура знаний, принципы и живые примеры из
+          хитов индустрии.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="games.html">Смотреть разборы игр</a>
+          <a class="cta ghost" href="#loop">Изучить core loop</a>
+          <a class="cta ghost" href="systems.html">Системы и прогрессия</a>
+        </div>
+        <div class="stats-strip" aria-label="Кратко о портале">
+          <div class="stat-pill">
+            <strong>20+</strong>
+            <span>игр с разбором дизайна</span>
+          </div>
+          <div class="stat-pill">
+            <strong>MDA</strong>
+            <span>механики, динамика, эстетика</span>
+          </div>
+          <div class="stat-pill">
+            <strong>Loop</strong>
+            <span>циклы удержания игрока</span>
+          </div>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+          alt="Официальная шапка Elden Ring — пример мира, награды и риска в одном пакете"
+          width="460"
+          height="215"
+          loading="eager"
+        />
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h2>Из чего состоит сильный геймдизайн</h2>
+      <p class="lead">
+        Классическая тройка MDA помогает не смешивать «кнопку на геймпаде» с «ощущением
+        от боя»: сначала проектируются правила, затем смотришь, как они ведут себя вместе,
+        и только потом полируешь презентацию — камеру, звук, UI и темп сцен.
+      </p>
+
+      <div id="mechanics" class="feature-split mechanics-focus">
+        <figure class="feature-split__visual">
+          <img
+            class="game-photo"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg"
+            alt="Официальная обложка DOOM Eternal — читаемые механики боя и ресурсов"
+            width="460"
+            height="215"
+            loading="lazy"
+          />
+        </figure>
+        <div class="feature-split__text">
+          <h3>Механики</h3>
+          <p>
+            Конкретные действия и правила: движение, стрельба, крафт, переговоры.
+            Хорошая механика понятна без туториала на десять экранов: игрок видит
+            объект, инструмент и результат.
+          </p>
+          <p class="lead">
+            В шутерах вроде DOOM Eternal награда за агрессию и риск вшита в цикл
+            добиваний и слабости врагов — игрок сразу читает поле боя и связку «действие
+            → ответ системы».
+          </p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article class="card neon-border">
+          <img
+            class="game-photo"
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Неоновый зал аркады — метафора динамики и ритма системы"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <h3>Динамика</h3>
+          <p>
+            Поведение системы в бою, экономике и кооперации при разных стилях игры.
+            Именно здесь рождаются доминирующие стратегии, снежные комбы и экономические
+            петли.
+          </p>
+        </article>
+        <article class="card neon-border">
+          <img
+            class="game-photo"
+            src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Игрок за компьютером — эмоции и вовлечённость в сессию"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <h3>Эмоции</h3>
+          <p>
+            Состояния игрока: риск, контроль, напряжение, удовлетворение от мастерства.
+            Эстетика — не только графика, а суммарное «каково это играть» каждую минуту.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Быстрые принципы дизайна</h2>
+        <p class="lead">
+          Эти принципы не отменяют жанровые особенности: хоррор может нарушать «честность»
+          ради напряжения, а нарративная игра — просить терпения к кат-сценам. Важно,
+          чтобы отклонения от правил были осознанным дизайнерским выбором, а не дырой
+          в обратной связи с игроком.
+        </p>
+        <ul class="principles-list">
+          <li><strong>Readable gameplay:</strong> игрок видит причину и следствие каждого действия.</li>
+          <li><strong>Fair challenge:</strong> игра наказывает за ошибку, а не за случайность.</li>
+          <li><strong>Meaningful choice:</strong> каждое решение меняет тактику или ресурс.</li>
+          <li><strong>Feedback first:</strong> звук, анимация и UI сразу сообщают о результате.</li>
+          <li><strong>Mastery curve:</strong> новичок выживает, опытный игрок раскрывает глубину.</li>
+          <li><strong>Playtest early:</strong> бумажный прототип или серый бокс раньше красивого арта.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>От бумажного наброска до метрик</h2>
+      <p class="lead">
+        Рабочий процесс геймдизайнера — это чередование синтеза идеи, быстрой проверки
+        и чтения поведения игроков. Ниже два типичных «моста», которые связывают замысел
+        с реальной сессией.
+      </p>
+      <div class="feature-split">
+        <div class="feature-split__text">
+          <h3>Прототип и вертикальный срез</h3>
+          <p class="lead">
+            Сначала выделяют один рискованный столп: бой, карта, диалог или экономика.
+            Его доводят до «можно играть 15 минут подряд без смешанных чувств» — так
+            дешевле ловить провалы в кривой сложности и в UX.
+          </p>
+        </div>
+        <figure class="feature-split__visual">
+          <img
+            class="game-photo"
+            src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+            alt="Командная работа у доски с заметками и схемами"
+            width="960"
+            height="540"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+      <div class="feature-split feature-split--flip">
+        <div class="feature-split__text">
+          <h3>Данные и качественные интервью</h3>
+          <p class="lead">
+            Телеметрия показывает, где игроки застревают или бросают игру, а интервью
+            объясняют почему: не хватило подсказки, награда пришла слишком поздно или
+            контроллер «не отвечает ожиданиям». Вместе это карта следующих итераций.
+          </p>
+        </div>
+        <figure class="feature-split__visual">
+          <img
+            class="game-photo"
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+            alt="Аналитика на экране — графики и панели метрик"
+            width="960"
+            height="540"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="loop" class="section container">
+      <h2>Core Loop в action-RPG</h2>
+      <p>
+        Простой цикл, который держит игрока в потоке от первой до сотой сессии. Каждый
+        шаг даёт новую информацию о мире или билде, поэтому повтор ощущается развитием,
+        а не «мойкой» одного и того же боя.
+      </p>
+      <div class="loop-wrap">
+        <button class="loop-btn active" data-step="1">1. Исследуй</button>
+        <button class="loop-btn" data-step="2">2. Сражайся</button>
+        <button class="loop-btn" data-step="3">3. Улучшай билд</button>
+      </div>
+      <div class="loop-info neon-border" id="loop-info">
+        Игрок исследует зону, находит ресурсы и открывает рискованные маршруты для лута.
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Игры как ориентир</h2>
+      <p class="lead">
+        Эти проекты часто приводят в курсах и на геймджемах: у них разные жанры, но
+        схожая дисциплина — честно вести игрока по правилам и награждать любопытство.
+        Полные заметки по десяткам других игр лежат в разделе с примерами.
+      </p>
+      <div class="cards">
+        <article class="card game-card">
+          <img
+            class="game-photo"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg"
+            alt="Официальная обложка Hades"
+            loading="lazy"
+          />
+          <h3>Hades</h3>
+          <p>
+            Пример, как нарратив и озвучка усиливают повторяемый roguelike-loop: каждый
+            забег знакомит с новой репликой или отношением богов Олимпа.
+          </p>
+          <span class="chip">Roguelite</span>
+        </article>
+        <article class="card game-card">
+          <img
+            class="game-photo"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg"
+            alt="Официальная обложка Portal 2"
+            loading="lazy"
+          />
+          <h3>Portal 2</h3>
+          <p>
+            Идеальная кривая обучения: одно правило, новая комбинация, инсайт — без
+            ощущения, что тебя «учат» через длинный текст.
+          </p>
+          <span class="chip">Puzzle</span>
+        </article>
+        <article class="card game-card">
+          <img
+            class="game-photo"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg"
+            alt="Официальная обложка The Witcher 3"
+            loading="lazy"
+          />
+          <h3>The Witcher 3</h3>
+          <p>
+            Сильные квесты, где выбор игрока меняет тон и последствия истории, а побочные
+            линии не воспринимаются как наполнитель.
+          </p>
+          <span class="chip">RPG</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Следующий шаг</h2>
+      <p>Открой страницу с примерами и сравни, как разные жанры решают одни и те же задачи дизайна.</p>
+      <p class="copyright">© 2026 GameDesign Hub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
